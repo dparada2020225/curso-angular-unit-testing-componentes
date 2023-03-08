@@ -45,6 +45,10 @@ describe('PersonComponent', () => {
   //   expect(pElement?.textContent).toEqual('Soy un parrafo');
   // });
 
+  it('should the name be "Nicolas"', () => {
+    component.person = new Person('Nicolas', 'Molina', 28, 89, 1.4);
+    expect(component.person.name).toEqual('Nicolas');
+  });
 
   it('should have <h3> with "Hola, {person.name}"', () => {
     // Arrange
